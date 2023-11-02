@@ -1,0 +1,673 @@
+fileFormatVersion: 2
+guid: becd490eda8830848a1c7a1f9f0edbbe
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1288
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3849404395ae87d4e8fc603d2c6040b1
+      internalID: -2089332726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1288
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92bcde0f3a62f847bcccf0da5640d12
+      internalID: -1524289217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1288
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a6c777d2e06df43b98bcfa84baf339
+      internalID: 2140649557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1288
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a924ef516f668b4a80b3fd751a982b3
+      internalID: -834494962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1288
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb86679b32acd5442a1c0810ef0bea9c
+      internalID: -885567692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1032
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9786d9e14103ae4685c55518908f389
+      internalID: -320753256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1032
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddcc9ebed275c3f45ab499161a1c3dbf
+      internalID: -1561502324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1032
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbe33c3f0945cc488f3eeedd927a854
+      internalID: -375459422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1032
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfee7f666197fe745bf3606927275b26
+      internalID: 1073817548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1032
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ed31b48d18c57449e9aea6418370b0
+      internalID: -36646902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 776
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133d53839d6bca44b912e444df26c82b
+      internalID: 664424062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 776
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96db5cf612e59ca448e841fc1cfd7fd1
+      internalID: 988754849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 776
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6691d4a7a7abf8a4dabba383b7ea3cd3
+      internalID: -1356244178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 776
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f2e806438bfb34f910b0c0c26dbb06
+      internalID: -669165026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 776
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34396473c98dab24e83f869c7c2cbd27
+      internalID: 2144271418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 520
+        width: 83
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec83f3bdafa49c47a64467c5ea3262f
+      internalID: -1787530018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 520
+        width: 86
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e47399a46e3ea04ca0c0b2e351cae99
+      internalID: -619792690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 522
+        width: 85
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e16c50c742920c478aeae55935d521b
+      internalID: -1371537207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 517
+        width: 91
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7cab9de1b020574aba51967e433830f
+      internalID: -1358511100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 517
+        width: 98
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a716e81fe284db4e9dd552d30535782
+      internalID: -1795899526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 263
+        width: 85
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2a5e77aea23d540bc315a57db7c7bb
+      internalID: 356767523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 266
+        width: 87
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d403306c48d4b54dad29266aacdffb7
+      internalID: -63059289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 264
+        width: 85
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbef89d82ab66eb47a24ad0385de7c7c
+      internalID: 1182171680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 263
+        width: 87
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cafe768906aeb54e8cba2556b307b94
+      internalID: 178523761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Blue Gem) Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 263
+        width: 97
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c2e4f87930f4d40b83e643f1643452
+      internalID: 329783909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d50fda4c2eb36ab4ca6012d766b7345a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Door (Blue Gem) Spritesheet_6: -1561502324
+      Door (Blue Gem) Spritesheet_19: 2077622704
+      Door (Blue Gem) Spritesheet_22: 593870751
+      Door (Blue Gem) Spritesheet_12: 664424062
+      Door (Blue Gem) Spritesheet_24: -1371537207
+      Door (Blue Gem) Spritesheet_5: -320753256
+      Door (Blue Gem) Spritesheet_21: -1983105126
+      Door (Blue Gem) Spritesheet_1: -1524289217
+      Door (Blue Gem) Spritesheet_11: -36646902
+      Door (Blue Gem) Spritesheet_7: 983862013
+      Door (Blue Gem) Spritesheet_17: 2144271418
+      Door (Blue Gem) Spritesheet_14: -1356244178
+      Door (Blue Gem) Spritesheet_18: -1787530018
+      Door (Blue Gem) Spritesheet_20: 434619494
+      Door (Blue Gem) Spritesheet_0: -2089332726
+      Door (Blue Gem) Spritesheet_9: 1073817548
+      Door (Blue Gem) Spritesheet_10: 49744759
+      Door (Blue Gem) Spritesheet_23: -619792690
+      Door (Blue Gem) Spritesheet_15: 1320804935
+      Door (Blue Gem) Spritesheet_8: -375459422
+      Door (Blue Gem) Spritesheet_16: -669165026
+      Door (Blue Gem) Spritesheet_3: -834494962
+      Door (Blue Gem) Spritesheet_2: 2140649557
+      Door (Blue Gem) Spritesheet_4: -885567692
+      Door (Blue Gem) Spritesheet_13: 988754849
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

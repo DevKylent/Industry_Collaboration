@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1599615079641008597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1599615079641008595}
+  - component: {fileID: 1599615079641008596}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1599615079641008595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599615079641008597}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 387.19733, y: -18.173307, z: 279.68802}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1599615079641008596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599615079641008597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f57d1b5f7c2124d8bbf5a94898c946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 0}
+  sounds:
+  - clipName: Jump
+    clip: {fileID: 8300000, guid: f0ccbe4e255b17145b420d0d3e8c0fb3, type: 3}
+    volume: 0.122
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - clipName: Landing
+    clip: {fileID: 8300000, guid: a5c61096cdc77a94387d41b2744ca466, type: 3}
+    volume: 0.199
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - clipName: OpenDoor
+    clip: {fileID: 8300000, guid: b26a7f94212d40b4580cd789929a2200, type: 3}
+    volume: 0.199
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - clipName: BackgroundMusic
+    clip: {fileID: 8300000, guid: 1bb21165568dd424cb11941007188dcf, type: 3}
+    volume: 0.021
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - clipName: MainMenuMusic
+    clip: {fileID: 8300000, guid: 4ee55d0fef7f4b44bbb1d2de3795b843, type: 3}
+    volume: 0.021
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - clipName: CreditsMusic
+    clip: {fileID: 8300000, guid: cbc8b359b92529e4e8198ec2d9911d7f, type: 3}
+    volume: 0.021
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}

@@ -1,0 +1,673 @@
+fileFormatVersion: 2
+guid: 47113807da43d784c992099a2df8fd8a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1288
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6645446742fa34d9ef518353937f54
+      internalID: -1076336755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1288
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162bd4d879517db498039d8a6811812a
+      internalID: -725639431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1288
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586e4b3b7e7dad342b6ab05e30236aa2
+      internalID: -661798609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1288
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9540a5be0c105024aaa863f9ed6a3006
+      internalID: 2113338993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1288
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3871f0f9aba843344ad1d30858c114ae
+      internalID: 451054652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1032
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa500abe03e76c40b51913e01991727
+      internalID: -615485319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1032
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d5e18fd6f513f4d8c62e92a97749e0
+      internalID: -1396081597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1032
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4531eb5a788704aa8d3c6ff6715992
+      internalID: -1718653808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1032
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102393f4218dc5d4b895d83dbe3a37c7
+      internalID: 700394195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1032
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9952477517ed349babfd800d3d7fb3
+      internalID: 326968711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 776
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83c684ee7d037943813a98046902e80
+      internalID: 2104717378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 776
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316a8e7576000694ca35b2e780472c2c
+      internalID: -422293436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 776
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c40a30da9cd894b9d450696715b1c6
+      internalID: -1179638736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 776
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb256b847a3ce94aa5d6dc765333838
+      internalID: -493866131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 776
+        width: 83
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952ac68cc95c860489e66c1504de3757
+      internalID: 287619065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 520
+        width: 83
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d9cde7ddcfde243847cf5fc2657406
+      internalID: -1652813474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 520
+        width: 83
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89585bb30a7d833468983f09b690749a
+      internalID: -1199462707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 520
+        width: 83
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ed68e14bdadf647bf90472bd207e07
+      internalID: -742740307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 520
+        width: 76
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bb744fb6d704f4d9e7f0a7c5a9e2c1
+      internalID: -1630838501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 520
+        width: 68
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c3783f6d14e534991cd2b742ed266f
+      internalID: 600025150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 264
+        width: 61
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876c80562b0001f42a4f24150caff2cc
+      internalID: -1641519680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 264
+        width: 61
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb65624a54eeff640a069a4d8bb7edc2
+      internalID: -1061852887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 264
+        width: 61
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54722a3f6c01ca64b942ab5544881f02
+      internalID: -50653628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 264
+        width: 61
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e434528f066d8aa46a955616d88037e7
+      internalID: 435323477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door (Green Gem) Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 264
+        width: 61
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737aae3baad6c7844adaee0350d728be
+      internalID: -305621968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: cfa0848256c76904090267ab782690f6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Door (Green Gem) Spritesheet_5: -615485319
+      Door (Green Gem) Spritesheet_10: 2104717378
+      Door (Green Gem) Spritesheet_9: 326968711
+      Door (Green Gem) Spritesheet_1: -725639431
+      Door (Green Gem) Spritesheet_4: 451054652
+      Door (Green Gem) Spritesheet_6: -1396081597
+      Door (Green Gem) Spritesheet_18: -1630838501
+      Door (Green Gem) Spritesheet_24: -305621968
+      Door (Green Gem) Spritesheet_0: -1076336755
+      Door (Green Gem) Spritesheet_8: 700394195
+      Door (Green Gem) Spritesheet_17: -742740307
+      Door (Green Gem) Spritesheet_2: -661798609
+      Door (Green Gem) Spritesheet_23: 435323477
+      Door (Green Gem) Spritesheet_22: -50653628
+      Door (Green Gem) Spritesheet_16: -1199462707
+      Door (Green Gem) Spritesheet_20: -1641519680
+      Door (Green Gem) Spritesheet_21: -1061852887
+      Door (Green Gem) Spritesheet_14: 287619065
+      Door (Green Gem) Spritesheet_11: -422293436
+      Door (Green Gem) Spritesheet_7: -1718653808
+      Door (Green Gem) Spritesheet_19: 600025150
+      Door (Green Gem) Spritesheet_12: -1179638736
+      Door (Green Gem) Spritesheet_15: -1652813474
+      Door (Green Gem) Spritesheet_13: -493866131
+      Door (Green Gem) Spritesheet_3: 2113338993
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
