@@ -64,7 +64,7 @@ public class Movement : MonoBehaviour
         FlipCharacter();
 
         //Detects if player is starting to fall and if the player is not falling the coyote time Counter will assign the Coyote Time, if not it will reduce Coyote Timer Counter each delta time 
-        if (Mathf.Abs(_rigidBody.velocity.y) < 0.1f)
+        if (Mathf.Abs(_rigidBody.velocity.y) < 0.001f)
         {
             coyoteTimeCounter = coyoteTime;
         }
