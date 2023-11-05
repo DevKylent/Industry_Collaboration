@@ -38,6 +38,10 @@ public class Movement : MonoBehaviour
     [SerializeField] private CharactersSwap whichplayer;
     [HideInInspector] public bool threeD = false;
 
+    //Add float called Coyote Time and Coyote Time Counter ******
+    private float coyoteTime = .75f;
+    private float coyoteTimeCounter;
+    //***********************************************************
 
 
 
@@ -66,6 +70,27 @@ public class Movement : MonoBehaviour
         animator.SetFloat("speed", Mathf.Abs(Move));
         currentposition = transform.position;
         FlipCharacter();
+
+        //Detects if player is starting to fall and if the player is not falling the coyote time Counter will assign the Coyote Time, if not it will reduce Coyote Timer Counter each delta time 
+        if (Mathf.Abs(_rigidBody.velocity.y) < 0.1f)
+        {
+            coyoteTimeCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
+        //**************************************************************************************************************************************************************************************
+
+
+
+        //Detects if "Spacebar" , "W" or "UpArrow" is pressed and the Coyote Timer Counter is higher than 0
+        if (Input.GetButtonDown("Jump") && coyoteTimeCounter > 0 || Input.GetKeyDown(KeyCode.UpArrow) && coyoteTimeCounter > 0 || Input.GetKeyDown(KeyCode.W) && coyoteTimeCounter > 0)
+        {
+            Jump();
+            coyoteTimeCounter = 0;
+        }
+        //*************************************************************************************************
 
         //Detects if "Spacebar" , "W" or "UpArrow" is pressed and is not falling then calls the Jump function
         if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidBody.velocity.y) < 0.001f || Input.GetKeyDown(KeyCode.UpArrow) && Mathf.Abs(_rigidBody.velocity.y) < 0.001f || Input.GetKeyDown(KeyCode.W) && Mathf.Abs(_rigidBody.velocity.y) < 0.001f)
