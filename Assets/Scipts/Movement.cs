@@ -93,10 +93,10 @@ public class Movement : MonoBehaviour
         //*************************************************************************************************
 
         //Detects if "Spacebar" , "W" or "UpArrow" is pressed and is not falling then calls the Jump function
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidBody.velocity.y) < 0.001f || Input.GetKeyDown(KeyCode.UpArrow) && Mathf.Abs(_rigidBody.velocity.y) < 0.001f || Input.GetKeyDown(KeyCode.W) && Mathf.Abs(_rigidBody.velocity.y) < 0.001f)
+        /*if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidBody.velocity.y) < 0.001f || Input.GetKeyDown(KeyCode.UpArrow) && Mathf.Abs(_rigidBody.velocity.y) < 0.001f || Input.GetKeyDown(KeyCode.W) && Mathf.Abs(_rigidBody.velocity.y) < 0.001f)
         {
             Jump();
-        }
+        }*/
 
         //Rotation
 
