@@ -14,6 +14,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private float JumpForce = 1;
     [HideInInspector] public Vector3 currentposition = new Vector3(0, 0, 0);
     //[SerializeField] public float TimeBetweenSounds = 1;
+
     //Coins
     public int coinValue = 1;
 
@@ -39,8 +40,8 @@ public class Movement : MonoBehaviour
     //Add float called Coyote Time and Coyote Time Counter ******
     private float coyoteTime = .75f;
     private float coyoteTimeCounter;
-    //***********************************************************
 
+    //***********************************************************
     private Rigidbody2D _rigidBody;
 
     private void Start()
@@ -52,13 +53,10 @@ public class Movement : MonoBehaviour
         //Level2.SetActive(false);
         //Level3.SetActive(false);
     }
-
     // Update is called once per frame
     private void Update()
     {
         IsFinished = ScriptScore.FinishedGame;
-        //Detects if "A" and "D" or "LeftArrow" and "RightArrow" is pressed giving it a value of 1 or -1
-        movement = Input.GetAxis("Horizontal"); //Does what the if functions uptop do.
         Move = movement;
         MovementFunc();
         animator.SetFloat("speed", Mathf.Abs(Move));
@@ -102,12 +100,16 @@ public class Movement : MonoBehaviour
     }
     private void MovementFunc()
     {
-        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed; //Moves the player
-        //movement = 0;
-    }
-    public float GetMove()
-    {
-        return Move;
+        //Detects if "A" and "D" or "LeftArrow" and "RightArrow" is pressed giving it a value of 1 or -1
+
+        //New Movement.
+        movement = Input.GetAxis("Horizontal");
+        _rigidBody.velocity = new Vector2(movement * MovementSpeed, _rigidBody.velocity.y);
+
+        //Old Movement.
+
+        //movement = Input.GetAxis("Horizontal"); //Does what the if functions uptop do.
+        //ransform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed; //Moves the player
     }
     private void Jump()
     {
@@ -117,7 +119,6 @@ public class Movement : MonoBehaviour
         AudioManager.Instance.Play("Jump");
         StartCoroutine(Landing());
     }
-
     public void OnLanding()
     {
         animator.SetBool("IsJumping", false);
@@ -153,17 +154,16 @@ public class Movement : MonoBehaviour
             Level2.SetActive(true);
             Destroy(other.gameObject);
             StartCoroutine(TurnMessageOff());
-            Time.timeScale = 0.01f;
         }
         if (other.CompareTag("Level 2 Tutorial"))
         {
             Level_2_Background_Art.SetActive(true);
         }
+
         if (other.CompareTag("Level 3"))
         {
             Level3.SetActive(true);
             Destroy(other.gameObject);
-            Time.timeScale = 0.01f;
             StartCoroutine(TurnMessageOff());
         }
 
@@ -180,12 +180,10 @@ public class Movement : MonoBehaviour
     }
     private IEnumerator TurnMessageOff()
     {
-        yield return new WaitForSeconds(0.03f);
+        yield return new WaitForSeconds(2.5f);
         Level2.SetActive(false);
         Level3.SetActive(false);
-        Time.timeScale = 1f;
     }
-
 
     //This Function will flip the character towards the location it is walking 
     void FlipCharacter()
