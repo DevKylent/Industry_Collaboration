@@ -105,15 +105,27 @@ public class Tutorial : MonoBehaviour
         {
             JumpingTutorial.SetActive(true);
         }
+        //Changed the element of the level tags from OnTriggerExit2d to OntriggerEnter2d so that the sprite change on caontact instead of when exiting the trigger
         if (other.CompareTag("Level 1 Tutorial"))
         {
             Level_1Prompt.SetActive(true);
+            Destroy(other.gameObject);
+            StartTimer = true;
+            currentTime = LevelCountdown;
+            StartLevel1 = true;
         }
         if (other.CompareTag("Level 2 Tutorial"))
         {
             
             whichMovement = 1;
             Level_2Prompt.SetActive(true);
+            Destroy(other.gameObject);
+            StartTimer = true;
+            currentTime = LevelCountdown;
+            StartLevel2 = true;
+            changedPosition = true;
+            CharactersSwap.Instance.changeCharacter(1);
+            changeposition();
             //changeposition();
         }
         if (other.CompareTag("Level 3 Tutorial"))
@@ -121,8 +133,17 @@ public class Tutorial : MonoBehaviour
             //CharacterSwap.Instance.changeCharacter(1);
             whichMovement = 2;
             Level_3Prompt.SetActive(true);
+            Destroy(other.gameObject);
+            StartTimer = true;
+            currentTime = LevelCountdown;
+            StartLevel3 = true;
+            changedPosition = true;
+            changeposition();
+            CharactersSwap.Instance.changeCharacter(1);
+            pauseMenu.Resume();
             //changeposition();
         }
+        //********************************************************************************************************************************************************
     }
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -138,37 +159,7 @@ public class Tutorial : MonoBehaviour
             StartTimer = true;
             currentTime = JumpingCountdown;
         }
-        if (other.CompareTag("Level 1 Tutorial"))
-        {
-            Destroy(other.gameObject);
-            StartTimer = true;
-            currentTime = LevelCountdown;
-            StartLevel1 = true;
-
-        }
-        if (other.CompareTag("Level 2 Tutorial"))
-        {
-            Destroy(other.gameObject);
-            StartTimer = true;
-            currentTime = LevelCountdown;
-            StartLevel2 = true;
-            changedPosition = true;
-            CharactersSwap.Instance.changeCharacter(1);
-            changeposition();
-
-        }
-        if (other.CompareTag("Level 3 Tutorial"))
-        {
-            Destroy(other.gameObject);
-            StartTimer = true;
-            currentTime = LevelCountdown;
-            StartLevel3 = true;
-            changedPosition = true;
-            changeposition();
-            CharactersSwap.Instance.changeCharacter(1);
-            pauseMenu.Resume();
-
-        }
+        
     }
     private IEnumerator changeposition()
     {

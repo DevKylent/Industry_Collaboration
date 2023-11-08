@@ -178,6 +178,8 @@ public class Movement : MonoBehaviour
             }
         }
     }
+
+    
     private IEnumerator TurnMessageOff()
     {
         yield return new WaitForSeconds(2.5f);
