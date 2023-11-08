@@ -56,7 +56,8 @@ public class PauseMenu : MonoBehaviour
     public void LoadMenu()
     {
         playerUI.SetActive(true);
-        SceneManager.LoadScene("MainMenu");
+        Application.Quit();//Cierra el juego en ves de llevarlo al menu principal o los creditos.
+        //Debug.Log("Quit");
         Time.timeScale = 1f;
         GameIsPaused = false;
     }

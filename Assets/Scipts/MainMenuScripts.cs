@@ -31,7 +31,7 @@ public class MainMenuScripts : MonoBehaviour
     //Quits application/game
     public void QuitGame()
     {
-        SceneManager.LoadScene("Credits");
+        Application.Quit(); //This closes the game.
         //Application.Quit(); //Will only execute in a build and not on the editor
         //Debug.Log("Quit"); //Debug Log is added to verify the function is working
     }
