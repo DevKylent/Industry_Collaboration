@@ -116,16 +116,10 @@ public class Tutorial : MonoBehaviour
         }
         if (other.CompareTag("Level 2 Tutorial"))
         {
+            StartCoroutine(WaitforLoadScreen());
             
-            whichMovement = 1;
-            Level_2Prompt.SetActive(true);
             Destroy(other.gameObject);
-            StartTimer = true;
-            currentTime = LevelCountdown;
-            StartLevel2 = true;
-            changedPosition = true;
-            CharactersSwap.Instance.changeCharacter(1);
-            changeposition();
+            
             //changeposition();
         }
         if (other.CompareTag("Level 3 Tutorial"))
@@ -166,5 +160,18 @@ public class Tutorial : MonoBehaviour
         
         yield return new WaitForSeconds(0.2f);
         changedPosition = false;
+    }
+
+    private IEnumerator WaitforLoadScreen()
+    {
+        yield return new WaitForSeconds(1f);
+        whichMovement = 1;
+        Level_2Prompt.SetActive(true);
+        StartTimer = true;
+        currentTime = LevelCountdown;
+        StartLevel2 = true;
+        changedPosition = true;
+        CharactersSwap.Instance.changeCharacter(1);
+        changeposition();
     }
 }

@@ -20,7 +20,6 @@ public class Movement : MonoBehaviour
 
     //UI
     [SerializeField] private GameObject Level2;
-    [SerializeField] public GameObject Level_2_Background_Art;
     [SerializeField] private GameObject Level3;
 
     //[SerializeField] private Transform player;
@@ -42,6 +41,8 @@ public class Movement : MonoBehaviour
     private float coyoteTimeCounter;
 
     //***********************************************************
+
+    [SerializeField] private LevelTransition LevelTransition;
     private Rigidbody2D _rigidBody;
 
     private void Start()
@@ -159,7 +160,7 @@ public class Movement : MonoBehaviour
         }
         if (other.CompareTag("Level 2 Tutorial"))
         {
-            Level_2_Background_Art.SetActive(true);
+            LevelTransition.FirstTransition();
         }
 
         if (other.CompareTag("Level 3"))
@@ -167,6 +168,8 @@ public class Movement : MonoBehaviour
             Level3.SetActive(true);
             Destroy(other.gameObject);
             StartCoroutine(TurnMessageOff());
+
+            LevelTransition.SecondTransition();
         }
 
         if (other.CompareTag("Finish"))
@@ -180,10 +183,6 @@ public class Movement : MonoBehaviour
             }
         }
     }
-
-    
-
-
     private IEnumerator TurnMessageOff()
     {
         yield return new WaitForSeconds(2.5f);
