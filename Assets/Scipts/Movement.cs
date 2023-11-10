@@ -15,9 +15,6 @@ public class Movement : MonoBehaviour
     [HideInInspector] public Vector3 currentposition = new Vector3(0, 0, 0);
     //[SerializeField] public float TimeBetweenSounds = 1;
 
-    //Coins
-    public int coinValue = 1;
-
     //UI
     [SerializeField] private GameObject Level2;
     [SerializeField] private GameObject Level3;
@@ -98,8 +95,6 @@ public class Movement : MonoBehaviour
 
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 720 * Time.deltaTime);
         }
-
-        
     }
     private void MovementFunc()
     {
@@ -137,7 +132,14 @@ public class Movement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Coins"))//Checks if we collided with an object with the tag "Coins"
         {
-            ScoreManager.instance.ChangeScore(coinValue); // Gives the player a point
+            ScoreManager.instance.ChangeScore();// Gives the player a point
+            Destroy(other.gameObject); //Destroys the object with the tag "Coins"
+            AudioManager.Instance.Play("CoinCollected");
+        }
+
+        if (other.gameObject.CompareTag("3DCoins"))//Checks if we collided with an object with the tag "Coins"
+        {
+            ScoreManager.instance.Change3DScore();// Gives the player a point
             Destroy(other.gameObject); //Destroys the object with the tag "Coins"
             AudioManager.Instance.Play("CoinCollected");
         }
