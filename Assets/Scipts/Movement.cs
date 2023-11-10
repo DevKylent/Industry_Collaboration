@@ -38,7 +38,10 @@ public class Movement : MonoBehaviour
     private float coyoteTimeCounter;
 
     //***********************************************************
-
+    /*
+    [SerializeField] Collider2D playerCollider;
+    Collider2D boxCollider;
+    */
     [SerializeField] private LevelTransition LevelTransition;
     private Rigidbody2D _rigidBody;
 
@@ -204,5 +207,35 @@ public class Movement : MonoBehaviour
             sprite.flipX = false;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Box"))
+        {
+            animator.SetBool("IsPushing", true);
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Box"))
+        {
+            animator.SetBool("IsPushing", false);
+        }
+    }
+
+    /*public void Push()
+    {
+        gameObject.tag = "Box";
+        //boxCollider = boxCollider.FindWithTag("Box");
+        bool ItIstouching = Physics2D.IsTouching(collider1: playerCollider,collider2: gameObject.FindWithTag("Box"));
+        if (ItIstouching)
+        {
+            animator.SetBool("IsPushing", true);
+        }
+        else
+        {
+            animator.SetBool("IsPushing", false);
+        }
+    }*/
 }
 
