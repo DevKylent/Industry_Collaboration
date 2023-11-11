@@ -50,7 +50,7 @@ public class CharactersSwap : MonoBehaviour
         }
         if (whichCharacter == 2 && !alreadychangedLevel3)
         {
-            character.transform.position = new Vector3(374.4f, -9f, 1.64f);
+            character.transform.position = new Vector3(374.4f, -7f, 1.64f);
             character.GetComponent<Movement>().enabled = false;
             alreadychangedLevel3 = true;
         }
