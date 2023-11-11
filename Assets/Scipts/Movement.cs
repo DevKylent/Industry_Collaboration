@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;//cesar nazario puso esto
 using UnityEngine.SceneManagement;
@@ -38,10 +39,7 @@ public class Movement : MonoBehaviour
     private float coyoteTimeCounter;
 
     //***********************************************************
-    /*
-    [SerializeField] Collider2D playerCollider;
-    Collider2D boxCollider;
-    */
+    
     [SerializeField] private LevelTransition LevelTransition;
     private Rigidbody2D _rigidBody;
 
@@ -208,9 +206,10 @@ public class Movement : MonoBehaviour
         }
     }
 
+    //When player collides with the box it will start the pushing animation until player stops colliding
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Box"))
+        if (collision.collider.CompareTag("Box") && Mathf.Abs(_rigidBody.velocity.x) > 0.1 && Mathf.Abs(_rigidBody.velocity.y) <0.1)
         {
             animator.SetBool("IsPushing", true);
         }
@@ -222,20 +221,7 @@ public class Movement : MonoBehaviour
             animator.SetBool("IsPushing", false);
         }
     }
-
-    /*public void Push()
-    {
-        gameObject.tag = "Box";
-        //boxCollider = boxCollider.FindWithTag("Box");
-        bool ItIstouching = Physics2D.IsTouching(collider1: playerCollider,collider2: gameObject.FindWithTag("Box"));
-        if (ItIstouching)
-        {
-            animator.SetBool("IsPushing", true);
-        }
-        else
-        {
-            animator.SetBool("IsPushing", false);
-        }
-    }*/
+    //**************************************************************************************************
+    
 }
 
