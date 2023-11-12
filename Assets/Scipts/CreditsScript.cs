@@ -3,23 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CredistScrip : MonoBehaviour
+public class CreditsScript : MonoBehaviour
 {
-    public void Start()
+    //[SerializeField] private Animator Credits;
+    void Start()
     {
         AudioManager.Instance.Play("CreditsMusic");
         AudioManager.Instance.Stop("MainMenuMusic");
         AudioManager.Instance.Stop("BackgroundMusic");
     }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("Level1");
+    }
+
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
-        //AudioManager.Instance.Stop("CreditsMusic");
     }
-
-    public void PlayAgain()
+    public void QuitGame()
     {
-        SceneManager.LoadScene("Level1");
-        //AudioManager.Instance.Stop("CreditsMusic");
+        Application.Quit();
     }
 }
