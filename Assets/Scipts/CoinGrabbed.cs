@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -5,7 +6,7 @@ using UnityEngine;
 
 public class CoinGrabbed : MonoBehaviour
 {
-    [SerializeField] MeshFilter coin;
+    [SerializeField] GameObject coin;
     public Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -16,16 +17,16 @@ public class CoinGrabbed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        coin.GetInstanceID();
-        if (coin.GetInstanceID() == null)
-        {
-            animator.SetBool("IsDestroyed", true);
-        }
-        else
-        {
-            animator.SetBool("IsDestroyed", false);
-        }
+        
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        animator.Play("GrabbedCoin");
+        Destroy(coin,2.21f);
+        
+    }
+
     
-    
+
 }

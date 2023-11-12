@@ -31,7 +31,7 @@ public class Movement : MonoBehaviour
     private float coyoteTimeCounter;
 
     //***********************************************************
-    
+    public ParticleSystem dust;
     [SerializeField] private LevelTransition LevelTransition;
     private Rigidbody2D _rigidBody;
 
@@ -52,6 +52,7 @@ public class Movement : MonoBehaviour
         currentposition = transform.position;
         FlipCharacter();
         
+        
         //Detects if player is starting to fall and if the player is not falling the coyote time Counter will assign the Coyote Time, if not it will reduce Coyote Timer Counter each delta time 
         if (Mathf.Abs(_rigidBody.velocity.y) < 0.001f)
         {
@@ -68,6 +69,7 @@ public class Movement : MonoBehaviour
         {
             Jump();
             coyoteTimeCounter = 0;
+            RunningDust();
         }
         //*************************************************************************************************
 
@@ -86,6 +88,11 @@ public class Movement : MonoBehaviour
 
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 720 * Time.deltaTime);
         }
+        
+        if(Mathf.Abs(Move) >0)
+        {
+            RunningDust();
+        }
     }
     private void MovementFunc()
     {
@@ -99,6 +106,7 @@ public class Movement : MonoBehaviour
 
         //movement = Input.GetAxis("Horizontal"); //Does what the if functions uptop do.
         //ransform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed; //Moves the player
+        
     }
     private void Jump()
     {
@@ -208,6 +216,13 @@ public class Movement : MonoBehaviour
         }
     }
     //**************************************************************************************************
-    
+
+    //Creating dust when player moves
+    public void RunningDust()
+    {
+        dust.Play();
+        
+        
+    }
 }
 

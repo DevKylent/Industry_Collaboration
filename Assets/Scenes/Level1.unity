@@ -13683,6 +13683,7 @@ MonoBehaviour:
   animator: {fileID: 1878824923}
   whichplayer: {fileID: 572560457}
   threeD: 0
+  dust: {fileID: 0}
   LevelTransition: {fileID: 1917966392}
 --- !u!212 &652672843
 SpriteRenderer:
@@ -15095,6 +15096,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   whichplayer: {fileID: 0}
   threeD: 0
+  dust: {fileID: 0}
   LevelTransition: {fileID: 0}
 --- !u!4 &738752325
 Transform:
@@ -17477,6 +17479,7 @@ MonoBehaviour:
   animator: {fileID: 838396290}
   whichplayer: {fileID: 572560457}
   threeD: 0
+  dust: {fileID: 0}
   LevelTransition: {fileID: 1917966392}
 --- !u!50 &838396289
 Rigidbody2D:
@@ -39534,6 +39537,7 @@ MonoBehaviour:
   animator: {fileID: 1878824923}
   whichplayer: {fileID: 572560457}
   threeD: 0
+  dust: {fileID: 0}
   LevelTransition: {fileID: 1917966392}
 --- !u!212 &1878824920
 SpriteRenderer:
@@ -53128,6 +53132,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7669072498952574704}
     m_Modifications:
+    - target: {fileID: 4678869815297959170, guid: 8882c0543d06e374ca03f9ed0d5a5aa1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4728470655401742255, guid: 8882c0543d06e374ca03f9ed0d5a5aa1, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -53181,10 +53189,15 @@ PrefabInstance:
       value: Coin I
       objectReference: {fileID: 0}
     - target: {fileID: 5599615044120693677, guid: 8882c0543d06e374ca03f9ed0d5a5aa1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599615044120693677, guid: 8882c0543d06e374ca03f9ed0d5a5aa1, type: 3}
       propertyPath: m_TagString
       value: 3DCoins
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5666503855413992499, guid: 8882c0543d06e374ca03f9ed0d5a5aa1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8882c0543d06e374ca03f9ed0d5a5aa1, type: 3}
 --- !u!1 &2998901104495423989
 GameObject:
