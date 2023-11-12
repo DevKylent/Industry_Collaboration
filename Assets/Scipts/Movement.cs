@@ -89,7 +89,7 @@ public class Movement : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 720 * Time.deltaTime);
         }
         
-        if(Mathf.Abs(Move) >0)
+        if(Mathf.Abs(Move) >0 && Mathf.Abs(_rigidBody.velocity.y) <0.1)
         {
             RunningDust();
         }
