@@ -69,10 +69,7 @@ public class ScoreManager : MonoBehaviour
 
     public void DestroyWall()
     {
-        if (score == 5) //if the score is equal to 5 and the wall exist it will destory the wall towards the next level
-        {
-            Destroy(wall1.gameObject);
-        }
+        Destroy(wall1.gameObject); 
     }
     public void ResetScore()//will reset the score UI
     {
