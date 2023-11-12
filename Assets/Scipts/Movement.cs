@@ -142,10 +142,6 @@ public class Movement : MonoBehaviour
         if (other.gameObject.CompareTag("3DCoins"))//Checks if we collided with an object with the tag "Coins"
         {
             ScoreManager.instance.Change3DScore();// Gives the player a point
-            //Shows Coin grabbed animation
-            //coinGrabbed.SetBool("GrabbedCoin", true);
-            //Destroy(other.gameObject, .30f);
-            Destroy(other.gameObject); //Destroys the object with the tag "Coins"
             AudioManager.Instance.Play("CoinCollected");
         }
 
