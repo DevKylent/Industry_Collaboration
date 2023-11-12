@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour
 
     //***********************************************************
     //Dust and coin grabbed
-    public ParticleSystem dust;
+    [SerializeField] private ParticleSystem dust;
     //public Animator coinGrabbed;
     //*********************
     [SerializeField] private LevelTransition LevelTransition;
@@ -92,7 +92,7 @@ public class Movement : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 720 * Time.deltaTime);
         }
         
-        if(Mathf.Abs(Move) >0 && Mathf.Abs(_rigidBody.velocity.y) <0.1)
+        if(Mathf.Abs(Move) >0 && Mathf.Abs(_rigidBody.velocity.y) < .01f)
         {
             RunningDust();
         }
@@ -220,7 +220,7 @@ public class Movement : MonoBehaviour
     //Creating dust when player moves
     public void RunningDust()
     {
-        //dust.Play();
+        dust.Play();
     }
 }
 
