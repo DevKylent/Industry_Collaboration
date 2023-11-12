@@ -6,27 +6,18 @@ using UnityEngine;
 
 public class CoinGrabbed : MonoBehaviour
 {
-    [SerializeField] MeshRenderer coin;
-    public Animator animator;
-    // Start is called before the first frame update
-    void Start()
+    private Animator animator;
+
+    private void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.tag == "Player")
+        {
+            animator.SetBool("GrabbedCoin", true);
+        }
     }
-
-    public void GrabCoin()
-    {
-        animator.SetBool("GrabbedCoin", true);
-       
-        
-    }
-
-    
-
 }

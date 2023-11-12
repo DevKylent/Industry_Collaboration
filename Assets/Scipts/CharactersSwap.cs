@@ -20,6 +20,8 @@ public class CharactersSwap : MonoBehaviour
     private bool alreadychanged = false;
     private bool alreadychangedLevel3 = false;
     // Start is called before the first frame update
+
+    [SerializeField] private Transform Move3DCharacter;
     void Start()
     {
         if (Instance == null)
@@ -50,7 +52,7 @@ public class CharactersSwap : MonoBehaviour
         }
         if (whichCharacter == 2 && !alreadychangedLevel3)
         {
-            character.transform.position = new Vector3(374.4f, -7f, 1.64f);
+            character.transform.position = Move3DCharacter.transform.position;
             character.GetComponent<Movement>().enabled = false;
             alreadychangedLevel3 = true;
         }
