@@ -31,7 +31,10 @@ public class Movement : MonoBehaviour
     private float coyoteTimeCounter;
 
     //***********************************************************
+    //Dust and coin grabbed
     public ParticleSystem dust;
+    //public Animator coinGrabbed;
+    //*********************
     [SerializeField] private LevelTransition LevelTransition;
     private Rigidbody2D _rigidBody;
 
@@ -139,6 +142,9 @@ public class Movement : MonoBehaviour
         if (other.gameObject.CompareTag("3DCoins"))//Checks if we collided with an object with the tag "Coins"
         {
             ScoreManager.instance.Change3DScore();// Gives the player a point
+            //Shows Coin grabbed animation
+            //coinGrabbed.SetBool("GrabbedCoin", true);
+            //Destroy(other.gameObject, .30f);
             Destroy(other.gameObject); //Destroys the object with the tag "Coins"
             AudioManager.Instance.Play("CoinCollected");
         }

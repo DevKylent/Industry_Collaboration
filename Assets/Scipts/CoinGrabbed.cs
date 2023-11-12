@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class CoinGrabbed : MonoBehaviour
 {
-    [SerializeField] GameObject coin;
+    [SerializeField] MeshRenderer coin;
     public Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -20,10 +20,10 @@ public class CoinGrabbed : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void GrabCoin()
     {
-        animator.Play("GrabbedCoin");
-        Destroy(coin,2.21f);
+        animator.SetBool("GrabbedCoin", true);
+       
         
     }
 
