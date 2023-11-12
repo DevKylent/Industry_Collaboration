@@ -220,9 +220,7 @@ public class Movement : MonoBehaviour
     //Creating dust when player moves
     public void RunningDust()
     {
-        dust.Play();
-        
-        
+        //dust.Play();
     }
 }
 

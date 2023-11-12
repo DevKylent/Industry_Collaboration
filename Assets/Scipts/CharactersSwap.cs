@@ -44,7 +44,7 @@ public class CharactersSwap : MonoBehaviour
         character = possibleCharacters[whichCharacter];
         if (whichCharacter == 1 && !alreadychanged)
         {
-            character.transform.position = new Vector3(145.52f, -2.2f, 0f);
+            character.transform.position = new Vector3(118.52f, -2.2f, 0f);
             character.GetComponent<Movement>().enabled = false;
             alreadychanged = true;
         }
