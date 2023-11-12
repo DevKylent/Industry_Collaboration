@@ -16,19 +16,11 @@ public class Movement : MonoBehaviour
     [HideInInspector] public Vector3 currentposition = new Vector3(0, 0, 0);
     //[SerializeField] public float TimeBetweenSounds = 1;
 
-    //UI
-    [SerializeField] private GameObject Level2;
-    [SerializeField] private GameObject Level3;
-
     //[SerializeField] private Transform player;
     [SerializeField] private ScoreManager ScriptScore;
     private bool IsFinished;
-    private Collision collision;
     [HideInInspector] public float Move, movement;
     private Vector3 RespawnPoint;
-    private bool Level1Active = true;
-    private bool Level2Active = true;
-    private bool Level3Active = true;
 
     public Animator animator;
     [SerializeField] private CharactersSwap whichplayer;
@@ -49,8 +41,6 @@ public class Movement : MonoBehaviour
         AudioManager.Instance.Stop("CreditsMusic");
         AudioManager.Instance.Stop("MainMenuMusic");
         _rigidBody = GetComponent<Rigidbody2D>();
-        //Level2.SetActive(false);
-        //Level3.SetActive(false);
     }
     // Update is called once per frame
     private void Update()
@@ -157,7 +147,6 @@ public class Movement : MonoBehaviour
 
         if (other.CompareTag("Level 2"))
         {
-            Level2.SetActive(true);
             Destroy(other.gameObject);
             StartCoroutine(TurnMessageOff());
         }
@@ -168,7 +157,6 @@ public class Movement : MonoBehaviour
 
         if (other.CompareTag("Level 3"))
         {
-            Level3.SetActive(true);
             Destroy(other.gameObject);
             StartCoroutine(TurnMessageOff());
 
@@ -189,8 +177,6 @@ public class Movement : MonoBehaviour
     private IEnumerator TurnMessageOff()
     {
         yield return new WaitForSeconds(2.5f);
-        Level2.SetActive(false);
-        Level3.SetActive(false);
     }
 
     //This Function will flip the character towards the location it is walking 

@@ -18,6 +18,9 @@ public class LevelTransition : MonoBehaviour
     // The background of the second level.
     [SerializeField] private GameObject Level_2_Background_Art;
 
+    // We also get referece for our Canvas for level 1 and 3.
+    [SerializeField] private GameObject Lv1Canvas;
+    [SerializeField] private GameObject Lv3Canvas;
     public void FirstTransition()
     {
         // This function will be in charge of starting a Coroutine.
@@ -38,6 +41,9 @@ public class LevelTransition : MonoBehaviour
 
         // It will set active (true) to our first Gameobject to not let the player go back to the previous level.
         CollisionWallL3.SetActive(true);
+
+        Lv1Canvas.SetActive(false);
+        Lv3Canvas.SetActive(true);
     }
 
     IEnumerator BeginTransition()
