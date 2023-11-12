@@ -7,9 +7,11 @@ using UnityEngine;
 public class CoinGrabbed : MonoBehaviour
 {
     private Animator animator;
+    private AudioSource au_Coin;
 
     private void Start()
     {
+        au_Coin = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
     }
 
@@ -18,6 +20,7 @@ public class CoinGrabbed : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             animator.SetBool("GrabbedCoin", true);
+            au_Coin.Play();
         }
     }
 }

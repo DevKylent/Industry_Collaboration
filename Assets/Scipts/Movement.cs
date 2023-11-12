@@ -136,13 +136,11 @@ public class Movement : MonoBehaviour
         {
             ScoreManager.instance.ChangeScore();// Gives the player a point
             Destroy(other.gameObject); //Destroys the object with the tag "Coins"
-            AudioManager.Instance.Play("CoinCollected");
         }
 
         if (other.gameObject.CompareTag("3DCoins"))//Checks if we collided with an object with the tag "Coins"
         {
             ScoreManager.instance.Change3DScore();// Gives the player a point
-            AudioManager.Instance.Play("CoinCollected");
         }
 
         if (other.CompareTag("Death")) //Checks if we collided with an object with the tag "Death" 
