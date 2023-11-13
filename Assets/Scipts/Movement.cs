@@ -152,12 +152,6 @@ public class Movement : MonoBehaviour
         {
             RespawnPoint = other.transform.position; //changes the respawnpoint to the checkpoint
         }
-
-        if (other.CompareTag("Level 2"))
-        {
-            Destroy(other.gameObject);
-            StartCoroutine(TurnMessageOff());
-        }
         if (other.CompareTag("Level 2 Tutorial"))
         {
             LevelTransition.FirstTransition();
@@ -166,7 +160,7 @@ public class Movement : MonoBehaviour
         if (other.CompareTag("Level 3"))
         {
             Destroy(other.gameObject);
-            StartCoroutine(TurnMessageOff());
+            StartCoroutine(InstanceSwap());
 
             LevelTransition.SecondTransition();
         }
@@ -182,9 +176,10 @@ public class Movement : MonoBehaviour
             }
         }
     }
-    private IEnumerator TurnMessageOff()
+    private IEnumerator InstanceSwap()
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(0.5f);
+        CharactersSwap.Instance.Swap();
     }
 
     //This Function will flip the character towards the location it is walking 
